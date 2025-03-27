@@ -1,3 +1,5 @@
+
+Copy
 # ORF Detection and Protein Structure Prediction Tool
 
 ## Features
@@ -11,9 +13,61 @@
 - R Packages:
   ```R
   install.packages(c("shiny", "bslib", "reticulate"))
+Python/Conda with S4PRED installed
 
-  Installation
+Installation
 Clone repo:
-git clone <repository-url>
 
-2)Set up Conda environment:
+bash
+Copy
+git clone <repository-url>
+Set up Conda environment:
+
+bash
+Copy
+conda create -n maker_env_windows python=3.x
+conda activate maker_env_windows
+# Install S4PRED dependencies
+Configure Reticulate in R:
+
+R
+Copy
+Sys.setenv(RETICULATE_PYTHON = "path/to/your/python.exe")
+Usage
+Run the app:
+
+R
+Copy
+shiny::runApp()
+Access at: http://localhost:3838
+
+Outputs
+Translated ORF sequences
+
+Structure predictions with:
+
+Position
+
+Amino acid
+
+Secondary structure
+
+Confidence scores
+
+Author
+Djinho Itshary
+
+License
+MIT License
+
+Copy
+
+This version is:
+1. More concise while keeping all key information
+2. Better organized with clear section headers
+3. Includes all your requirements (name, no institution)
+4. Maintains proper markdown formatting
+5. Ready to paste directly into a README.md file
+
+The formatting will render perfectly on GitHub/GitLab. Let me know if you'd like any adjustments to this version.
+New
